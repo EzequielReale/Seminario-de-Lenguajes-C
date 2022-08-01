@@ -65,7 +65,7 @@ int main(int argc, char *argv[]) {
     case O_BLUR:
       if (in_quantity == 1)
       {
-        unsigned int ratio = atoi(optarg);
+        unsigned char ratio = atoi(optarg);
         if (ratio)
         {
           p_temp = ppm_operation_blur(p, ratio);
