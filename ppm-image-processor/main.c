@@ -65,9 +65,10 @@ int main(int argc, char *argv[]) {
     case O_BLUR:
       if (in_quantity == 1)
       {
-        unsigned char ratio = atoi(optarg);
+        unsigned int ratio = atoi(optarg);
         if (ratio)
         {
+          if (ratio > 255) ratio = 255;
           p_temp = ppm_operation_blur(p, ratio);
           ppm_free(p);
           p = p_temp;
