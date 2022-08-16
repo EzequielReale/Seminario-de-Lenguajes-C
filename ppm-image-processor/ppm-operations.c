@@ -7,7 +7,7 @@ t_ppm ppm_operation_rotate90(t_ppm p)
 
   for (row = 0; row < p.width; row++)
   {
-    for (col = 0; col < p.height; col++) new.pixels[row][col] = p.pixels[col][row];
+    for (col = 0; col < p.height; col++) new.pixels[row][p.height - col - 1] = p.pixels[col][row];
   }
   return new;
 }
