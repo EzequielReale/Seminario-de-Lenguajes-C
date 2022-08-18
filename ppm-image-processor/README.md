@@ -43,5 +43,5 @@ La descripción completa del proyecto y los objetivos se encuentran en: https://
 ## Compilación:
 
 ```
-gcc main.c ppm.c ppm-operations.c tools.c -o ppm-processor -Wall
+gcc main.c ppm.c ppm-operations.c tools.c -o images -Wall
 ```
