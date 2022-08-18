@@ -10,7 +10,7 @@ La descripción completa del proyecto y los objetivos se encuentran en: https://
 * `-i <input.ppm>`: archivo origen. Obigatorio. Debe ser además el 1er argumento.
 * `-o <output.ppm>`: archivo salida. Obligatorio.
 * `-n`: calcula el negativo de la imagen.
-* `-r`: rota a 90 grados la imagen.
+* `-r`: rota a 90° la imagen.
 * `-h`: espeja horizontalmente la imagen.
 * `-v`: espeja verticalmente la imagen.
 * `-b NUM`: desenfoca la imagen con un radio NUM (hasta 255).
