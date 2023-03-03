@@ -32,8 +32,6 @@ t_ppm ppm_operation_flip_vertical(t_ppm p)
   for (row = 0; row < p.height; row++)
   {
     for (col = 0; col < p.width; col++) new.pixels[row][col] = p.pixels[p.height - row - 1][col];
-    // En la descripción de la función dice que se calcula como [i-height-1][j],
-    // pero intuyo que es un error porque daría resultados erróneos. Entonces, calculo [height-i-1][j]
   }
   return new;
 }
